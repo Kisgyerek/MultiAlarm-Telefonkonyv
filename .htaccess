@@ -1,0 +1,18 @@
+# JELSZAVAS VEDELEM
+AuthType Basic
+AuthName "FEJLESZTÉS ALATT! JELSZÓ SZÜKSÉGES!"
+AuthUserFile /home/orszohu1/public_html/multialarm/.htpasswd
+Require valid-user
+
+#átiránytáskezelés
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php
+
+
+# KÖNYVTÁR LISTÁZÁS TILTAS
+ 
+Options -Indexes
+IndexIgnore *

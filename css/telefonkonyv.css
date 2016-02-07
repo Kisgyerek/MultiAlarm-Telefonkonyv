@@ -1,0 +1,353 @@
+@charset "utf-8";
+.ui-datepicker {
+	z-index:100;
+}
+
+.hiba{
+	position:relative;
+	float:left;
+	width:94%;
+	margin:3%;
+	display:none;
+	color:#FFFFFF;
+	border:solid 1px #000;
+	background-color:#cf5465;
+	padding:5px;
+	z-index:50;
+}
+.success{
+	position:relative;
+	float:left;
+	width:94%;
+	margin:3%;
+	display:none;
+	color:#FFFFFF;
+	border:solid 1px #000;
+	background-color:#7eba01;
+	padding:5px;
+	z-index:50;
+}
+body,container,row{
+	margin:0px;
+	padding:0px;
+	background-color:#ded9d4;
+}
+
+#header_logo img{
+	display:block;
+	height:100%;
+	max-height:120px;
+	margin:10px;
+}
+#header{
+	position:relative;
+	height:100%;
+	max-height:200px;
+	min-height:100px;
+	background-color:#53161e;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	padding-bottom:5px;
+	z-index:30;
+}
+
+#header_cim{
+	padding-top:40px;
+	color:#FFF;
+}
+
+#beviteli_felulet{
+	position:relative;
+	background-color:#85313c;
+	padding:1%;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+	z-index:20;
+}
+#beviteli_felulet label{
+	 color:#FFF;
+}
+#beviteli_felulet input{
+	border:2px solid #53161e;
+}
+
+#also_resz{
+	position:relative;
+	padding:1%;
+	background-color:#a0747a;
+	color:#420810;
+
+}
+#tablazat{
+	position:relative;
+	width:99%;
+	margin:0.5%;
+}
+
+.tel_torles_btn{
+	display:block;
+	width:28px;
+	height:30px;
+	background-image:url(../design_images/delete_icon.png) !important;
+	background-position:0px -30px;
+}
+.tel_torles_btn:hover{
+	cursor:pointer;
+	background-position:0px 0px;
+}
+
+.tel_mod_btn{
+	display:block;
+	width:35px;
+	height:30px;
+	background-image:url(../design_images/update_icon.png) !important;
+	background-position:0px -30px;
+}
+.tel_mod_btn:hover{
+	cursor:pointer;
+	background-position:0px 0px;
+}
+.tel_map_btn{
+	position:relative;
+	display:block;
+	width:35px;
+	height:30px;
+	background-image:url(../design_images/map_icon.png) !important;
+	background-position:0px -30px;
+}
+.tel_map_btn:hover{
+	cursor:pointer;
+	background-position:0px 0px;
+}
+
+.table{
+	width:98%;
+	margin-left:1%;
+	color:#000;
+	border-collapse:collapse;
+	font-size:0.9em;
+}
+.table th{
+	cursor:default;
+	color:#FFF;
+}
+.table input{
+	margin-top:5px;
+}
+.tr_over:hover{
+	background-color:#8e646a;
+}
+
+.table_mod_icons{
+	width:40px;
+	padding-left:2px;	
+}
+.table_torles_icons{
+	width:35px;
+	padding-left:2px;	
+}
+
+#google_map_div{
+	position:fixed;
+	padding:0px;
+	margin:0px;
+	display:none;
+	width:100%;
+	height:100%;
+	z-index:200;
+	background-color:#999;
+}
+#map{
+	position:relative;
+	clear:both;
+	height:90%;
+	margin:3%;
+	z-index:10;
+}
+#google_map_close{
+	position:relative;
+	right:5px;
+	float:right;
+	top:5px;
+	display:block;
+	width:35px;
+	height:35px;
+	background-image:url(../design_images/close_icon.png) !important;
+	background-position:0px 0px;
+	z-index:50;
+}
+#google_map_close:hover{
+	cursor:pointer;
+	background-position:0px -35px;
+}
+@media (max-width: 1100px){
+	.table{
+		font-size:0.8em;
+		border-collapse:collapse;
+	}
+
+	.table_input_nev{
+		width:100px;
+	}
+	.table_input_varos{
+		width:100px;
+	}
+	.table_input_datum{
+		width:60px;
+	}
+	.table_input_cim{
+		width:100px;
+	}
+		
+}
+@media (max-width: 1000px){
+	.table{
+		font-size:0.7em;
+		border-collapse:collapse;
+	}
+
+	.table_input_nev{
+		width:90px;
+	}
+	.table_input_varos{
+		width:90px;
+	}
+	.table_input_datum{
+		width:50px;
+	}
+	.table_input_cim{
+		width:90px;
+	}
+	.tel_torles_btn{
+		width:20px;
+		height:21px;
+		background-image:url(../design_images/delete_icon.png) !important;
+		background-size:20px 42px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}
+	.tel_torles_btn:hover{
+		cursor:pointer;
+		background-position:0px 0px;
+	}
+	
+	.tel_mod_btn{
+		display:block;
+		width:25px;
+		height:21px;
+		background-image:url(../design_images/update_icon.png) !important;
+		background-size:25px 43px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}
+	.tel_mod_btn:hover{
+		cursor:pointer;
+		background-position:0px 0px;
+	}
+	.tel_map_btn{
+		position:relative;
+		display:block;
+		width:25px;
+		height:21px;
+		background-image:url(../design_images/map_icon.png) !important;
+		background-size:25px 43px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}
+		
+}
+@media (max-width: 760px) {	
+	.row{
+		margin:0px;
+		padding:0px;
+	}
+	.container{
+		width:100%;
+		padding-left:1%;
+		padding-right:1%;
+	}
+    .carousel-caption {
+    	display: none; 
+    }	
+	
+	#Top_elerhetoseg{
+		display:none;
+	}
+	#Menu_title{
+		display:block;
+		width:100px;
+		float:left;
+		color:#FFF;
+		font-size:1.2em;
+		padding:10px 0px 3px 5px;
+	}
+	
+	#login_btn{
+		right:5px;
+	}
+	
+	#adataim_btn{
+		right:5px;
+	}
+	
+	#footer{
+		margin:0px;
+		padding:0px;
+		font-size:0.8em;
+	}
+	.table{
+		font-size:0.7em;
+		border-collapse:collapse;
+	}
+	.table_input_nev{
+		width:80px;
+	}
+	.table_input_varos{
+		width:80px;
+	}
+	.table_input_datum{
+		width:40px;
+	}
+	.table_input_cim{
+		width:80px;
+	}
+/*
+	.tel_torles_btn{
+		width:20px;
+		height:21px;
+		background-image:url(../design_images/delete_icon.png) !important;
+		background-size:20px 42px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}
+	.tel_torles_btn:hover{
+		cursor:pointer;
+		background-position:0px 0px;
+	}
+	
+	.tel_mod_btn{
+		display:block;
+		width:25px;
+		height:21px;
+		background-image:url(../design_images/update_icon.png) !important;
+		background-size:25px 43px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}
+	.tel_mod_btn:hover{
+		cursor:pointer;
+		background-position:0px 0px;
+	}
+	.tel_map_btn{
+		position:relative;
+		display:block;
+		width:25px;
+		height:21px;
+		background-image:url(../design_images/map_icon.png) !important;
+		background-size:25px 43px;
+		background-position:0px -21px;
+		background-repeat:no-repeat;
+	}*/
+}
